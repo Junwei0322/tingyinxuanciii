@@ -177,22 +177,22 @@
 <body>
 
     <div class="header-bar">
-        <div class="progress">待解單字: <span id="remain-count">0</span></div>
+        <div class="progress">待解单字: <span id="remain-count">0</span></div>
         <div class="lives">生命: <span id="lives-display">❤❤❤</span></div>
     </div>
 
     <button class="play-btn" id="play-audio-btn" onclick="playTargetSound()">
         🔊
     </button>
-    <div style="color:#666; margin-bottom: 20px;">(點擊喇叭聽發音，選出正確的字)</div>
+    <div style="color:#666; margin-bottom: 20px;">(点击喇叭听发音，选出正确的字)</div>
 
     <div class="grid-container" id="game-grid">
         </div>
 
     <div id="overlay" class="overlay">
-        <h2 id="end-title">遊戲結束</h2>
+        <h2 id="end-title">游戏结束</h2>
         <p id="end-msg" style="font-size: 1.5em; margin-bottom: 30px;"></p>
-        <button class="btn-restart" onclick="initGame()">再來一次</button>
+        <button class="btn-restart" onclick="initGame()">再来一次</button>
     </div>
 
     <script src="words.js"></script>
@@ -374,16 +374,16 @@
         }
 
         function gameOver() {
-            endTitle.textContent = "💔 挑戰失敗";
+            endTitle.textContent = "💔 挑战失败";
             endTitle.style.color = "#e74c3c";
-            endMsg.textContent = "別氣餒，多聽幾次就熟了！";
+            endMsg.textContent = "别气馁，多听几次就熟了！";
             overlay.style.display = 'flex';
         }
 
         function gameWin() {
-            endTitle.textContent = "🎉 全數通關";
+            endTitle.textContent = "🎉 全数通关";
             endTitle.style.color = "#2ecc71";
-            endMsg.textContent = "太強了！所有生詞都聽懂了！";
+            endMsg.textContent = "太强了！所有生词都听懂了！";
             overlay.style.display = 'flex';
         }
 
